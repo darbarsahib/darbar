@@ -1,3 +1,4 @@
+resources/public/js/compiled/out/
 figwheel_server.log
 pom.xml
 *jar
