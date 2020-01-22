@@ -1,4 +1,4 @@
-(ns darbar.core
+(ns darbar-new.core
   (:require [hipo.core :as hipo]
             [dommy.core :as dommy :refer-macros [sel1]]))
 
@@ -38,9 +38,9 @@
         dd (if (>= d 10) (str d) (str 0 d))
         month (month-names m)
         prev-month (month-names (- m 1))]
-    [(str "http://new.sgpc.net/kirtan-rec/" yyyy "/" mm "/recorded" dd mm yyyy "%20 (1).mp3")
+    [(str "http://new.sgpc.net/kirtan-rec/" yyyy "/" mm "/recorded" dd mm yyyy "%20(1).mp3")
      (str "http://new.sgpc.net/kirtan-rec/" yyyy "/" mm "/recorded" dd mm yyyy ".mp3")
-     (str "http://new.sgpc.net/kirtan-rec/" yyyy "/" mm "/recorded" dd mm yyyy "%20 (2).mp3")]))
+     (str "http://new.sgpc.net/kirtan-rec/" yyyy "/" mm "/recorded" dd mm yyyy "%20(2).mp3")]))
 
 
 (defn make-source [url]
